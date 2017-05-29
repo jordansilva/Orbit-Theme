@@ -84,6 +84,9 @@ p {
 }
 .sidebar-wrapper .profile {
   margin-bottom: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 45%; /*the magic*/
 }
 .sidebar-wrapper .contact-list .fa {
   margin-right: 5px;
