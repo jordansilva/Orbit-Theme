@@ -1,0 +1,50 @@
+{% assign profile = site.data.profile[include.lang] %}
+
+<div class="profile-container">
+    <img class="profile" src="assets/images/profile.png" alt="Jordan Silva's photo" />
+    <h1 class="name">{{ profile.name }}</h1>
+    <h3 class="tagline">{{ profile.description }}</h3>
+</div><!--//profile-container-->
+
+<div class="contact-container container-block">
+    <ul class="list-unstyled contact-list">
+        <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{ profile.email }}">{{ profile.email }}</a></li>
+        <!-- <li class="phone"><i class="fa fa-phone"></i><a href="tel:0123 456 789">0123 456 789</a></li> -->
+        <li class="website"><i class="fa fa-globe"></i><a href="http://{{ profile.site }}/" target="_blank">{{ profile.site }}</a></li>
+        <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://linkedin.com/in/{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></li>
+        <li class="github"><i class="fa fa-github"></i><a href="https://github.com/{{ profile.github }}/" target="_blank">{{ profile.github }}</a></li>
+        <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{ profile.twitter }}" target="_blank">@{{ profile.twitter }}</a></li>
+    </ul>
+</div>
+
+<!-- EDUCATION -->
+<div class="education-container container-block">
+    <h2 class="container-block-title">Education</h2>
+    {% for edu in profile.education %}
+        <div class="item">
+            <h4 class="degree">{{ edu.degree }}</h4>
+            <h5 class="meta">{{ edu.school }}</h5>
+            <div class="time">{{ edu.period }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+<!-- LANGUAGES -->
+<div class="languages-container container-block">
+    <h2 class="container-block-title">Languages</h2>
+    <ul class="list-unstyled interests-list">
+    {% for lang in profile.language %}
+        <li>{{ lang.name }} <span class="lang-desc">({{ lang.level }})</span></li>
+    {% endfor %}
+    </ul>
+</div>
+
+<!-- INTEREST -->
+<div class="interests-container container-block">
+    <h2 class="container-block-title">Interests</h2>
+    <ul class="list-unstyled interests-list">
+        {% for info in profile.interest %}
+            <li>{{ info }}</li>
+        {% endfor %}
+    </ul>
+</div>

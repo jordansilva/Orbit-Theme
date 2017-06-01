@@ -1,0 +1,18 @@
+<section class="section experiences-section">
+    <h2 class="section-title"><i class="fa fa-briefcase"></i>{{include.title}}</h2>
+    
+    {% for exp in site.data.experience %}
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">{{exp.jobtitle}}</h3>
+                <div class="time">{{exp.period}}</div>
+            </div>
+            <div class="company">{{exp.company}}, {{exp.place}}</div>
+        </div>
+        <div class="details">
+            <p>{{exp.summary}}</p>
+        </div>
+    </div>
+    {% endfor %}
+</section>

@@ -1,0 +1,33 @@
+en:
+  name: Jordan Silva
+  description: Software Engineer
+  email: silva.jordan@gmail.com
+  site: jordansilva.com
+  linkedin: silvajordan
+  github: jordansilva
+  twitter: jordansilva
+  education:
+    - degree: MSc in Computer Science
+      school: Universidade Federal de Minas Gerais (UFMG)
+      period: 2015 - 2017
+
+    - degree: BTech in IT Management
+      school: UniBH
+      period: 2010 - 2012
+
+    - degree: BSc in Computer Science
+      school: UniBH
+      period: 2007 - 2009 (Incomplete)
+
+    - degree: Computer Technical Course
+      school: Colégio e Faculdade Kennedy
+      period: 2005 - 2006
+
+  language:
+    - name: Portuguese
+      level: Native
+
+    - name: English
+      level: Professional
+
+  interest: [Climbing, Diving, Movies and Netflix, Data Science, Learning new things, Cryptocoins]

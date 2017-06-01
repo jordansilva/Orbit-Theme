@@ -1,0 +1,7 @@
+<section class="section summary-section">
+    <h2 class="section-title"><i class="fa fa-user"></i>{{include.title}}</h2>
+    <div class="summary">
+        {% assign content = site.data.summary[include.lang] %}
+        <p>{{ content.summary }}</p>
+    </div><!--//summary-->
+</section><!--//section-->

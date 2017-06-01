@@ -1,0 +1,14 @@
+<section class="section projects-section">
+    <h2 class="section-title"><i class="fa fa-archive"></i>{{include.title}}</h2>
+    <div class="intro">
+        <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+    </div>
+
+    {% for proj in site.data.project %}
+    <div class="item">
+        <span class="project-title"><a href="{{proj.url}}" target="_blank">{{ proj.name }}</a></span> -
+        <span class="project-tagline">{{ proj.summary }}</span>
+    </div>
+    {% endfor %}
+</section>

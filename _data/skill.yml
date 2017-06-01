@@ -1,0 +1,17 @@
+- name: "Android"
+  level: "80%"
+
+- name: "Python"
+  level: "65%"
+
+- name: "Javascript &amp; jQuery"
+  level: "70%"
+
+- name: "HTML5 &amp; CSS"
+  level: "60%"
+
+- name: "C#"
+  level: "55%"
+  
+- name: "Data Science"
+  level: "50%"
